@@ -1,5 +1,10 @@
 package io.github.andrioli.euler;
 
+import static io.github.andrioli.euler.utils.Multiples.of;
+import io.github.andrioli.euler.utils.Multiples;
+
+import java.util.stream.IntStream;
+
 /**
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we
  * get 3, 5, 6 and 9. The sum of these multiples is 23.
@@ -16,12 +21,7 @@ public class Problem001 implements ProjectEulerProblem {
 
     @Override
     public String solve() {
-        int sum = 0;
-        for (int i = 1; i < upperBoundLimit; i++) {
-            if (i % 3 == 0 || i % 5 == 0) {
-                sum += i;
-            }
-        }
+        final int sum = IntStream.range(1, upperBoundLimit).filter(Multiples.of(3).or(of(5))).sum();
         return Integer.toString(sum);
     }
 
