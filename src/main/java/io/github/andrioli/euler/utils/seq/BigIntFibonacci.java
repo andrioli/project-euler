@@ -15,7 +15,7 @@ public class BigIntFibonacci implements BigIntSeq {
 
         final BigInteger value = values[currentCursor];
 
-        values[currentCursor].add(values[nextCursor]);
+        values[currentCursor] = values[currentCursor].add(values[nextCursor]);
         cursor = nextCursor;
 
         return value;
