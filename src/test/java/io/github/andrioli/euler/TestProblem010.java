@@ -10,7 +10,7 @@ public class TestProblem010 {
         // 2 + 3 + 5 + 7
         Assert.assertEquals("17", new Problem010(8).solve());
 
-        // Solution of problem 1
+        // Solution of problem 10
         Assert.assertEquals("142913828922", new Problem010(2000000).solve());
     }
 
