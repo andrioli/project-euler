@@ -28,7 +28,7 @@ public class Problem004 implements ProjectEulerProblem {
 
         // brute force approach
         for (int v1 = low; v1 <= high; v1++) {
-            for (int v2 = low; v2 < high; v2++) {
+            for (int v2 = low; v2 <= high; v2++) {
                 final int value = v1 * v2;
                 if (StringUtils.isPalindrome(Integer.toString(value))) {
                     if (value > maxValue) {
