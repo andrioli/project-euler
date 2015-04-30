@@ -4,9 +4,12 @@ import io.github.andrioli.euler.utils.seq.IntSeq;
 import io.github.andrioli.euler.utils.seq.Prime;
 
 /**
+ * <p>
  * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
- *
+ * </p>
+ * <p>
  * Find the sum of all the primes below two million.
+ * </p>
  */
 public class Problem010 implements ProjectEulerProblem {
 

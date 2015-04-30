@@ -4,30 +4,37 @@ import io.github.andrioli.euler.utils.seq.BigIntFibonacci;
 import io.github.andrioli.euler.utils.seq.BigIntSeq;
 
 /**
+ * <p>
  * The Fibonacci sequence is defined by the recurrence relation:
- *
- * F_n = F_{n−1} + F_{n−2}, where F_1 = 1 and F_2 = 1.
- *
+ * </p>
+ * <blockquote>
+ * F<sub><i>n</i></sub> = F<sub><i>n</i>−1</sub> + F<sub><i>n</i>−2</sub>,
+ * where F<sub>1</sub> = 1 and F<sub>2</sub> = 1.
+ * </blockquote>
+ * <p>
  * Hence the first 12 terms will be:
- *
- * <ul>
- * <li>F_1 = 1</li>
- * <li>F_2 = 1</li>
- * <li>F_3 = 2</li>
- * <li>F_4 = 3</li>
- * <li>F_5 = 5</li>
- * <li>F_6 = 8</li>
- * <li>F_7 = 13</li>
- * <li>F_8 = 21</li>
- * <li>F_9 = 34</li>
- * <li>F_10 = 55</li>
- * <li>F_11 = 89</li>
- * <li>F_12 = 144</li>
- * </ul>
- *
- * The 12th term, F_12, is the first term to contain three digits.
- *
- * What is the first term in the Fibonacci sequence to contain 1000 digits?
+ * </p>
+ * <blockquote>
+ * F<sub>1</sub> = 1<br>
+ * F<sub>2</sub> = 1<br>
+ * F<sub>3</sub> = 2<br>
+ * F<sub>4</sub> = 3<br>
+ * F<sub>5</sub> = 5<br>
+ * F<sub>6</sub> = 8<br>
+ * F<sub>7</sub> = 13<br>
+ * F<sub>8</sub> = 21<br>
+ * F<sub>9</sub> = 34<br>
+ * F<sub>10</sub> = 55<br>
+ * F<sub>11</sub> = 89<br>
+ * F<sub>12</sub> = 144
+ * </blockquote>
+ * <p>
+ * The 12th term, F<sub>12</sub>, is the first term to contain three digits.
+ * </p>
+ * <p>
+ * What is the index of the first term in the Fibonacci sequence to contain 1000
+ * digits?
+ * </p>
  */
 public class Problem025 implements ProjectEulerProblem {
 

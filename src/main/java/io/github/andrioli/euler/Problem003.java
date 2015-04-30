@@ -4,9 +4,12 @@ import io.github.andrioli.euler.utils.seq.IntSeq;
 import io.github.andrioli.euler.utils.seq.Prime;
 
 /**
+ * <p>
  * The prime factors of 13195 are 5, 7, 13 and 29.
- *
+ * </p>
+ * <p>
  * What is the largest prime factor of the number 600851475143 ?
+ * </p>
  */
 public class Problem003 implements ProjectEulerProblem {
 
