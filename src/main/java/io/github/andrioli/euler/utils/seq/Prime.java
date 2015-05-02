@@ -1,11 +1,12 @@
 package io.github.andrioli.euler.utils.seq;
 
 import java.util.LinkedList;
-import java.util.List;
+
+import br.usp.each.saeg.commons.ArrayUtils;
 
 public class Prime implements IntSeq {
 
-    private final List<Integer> primes = new LinkedList<>();
+    private final LinkedList<Integer> primes = new LinkedList<>();
 
     private int current = 2;
 
@@ -35,6 +36,23 @@ public class Prime implements IntSeq {
             }
         }
         return false;
+    }
+
+    public boolean isPrime(final int n) {
+        return !isNotPrime(n);
+    }
+
+    public int[] primes(final int limitExclusive) {
+        int size = primes.size();
+        while (current < limitExclusive) {
+            next();
+            size++;
+        }
+        if (!primes.isEmpty() && primes.getLast() >= limitExclusive) {
+            current = primes.removeLast();
+            size--;
+        }
+        return ArrayUtils.toArray(primes, new int[size]);
     }
 
 }

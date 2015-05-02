@@ -32,4 +32,21 @@ public class TestPrime {
         }
     }
 
+    @Test
+    public void testPrimes() {
+        Assert.assertArrayEquals(new int[0], p.primes(0));
+        Assert.assertArrayEquals(new int[0], p.primes(1));
+        Assert.assertArrayEquals(new int[0], p.primes(2));
+        Assert.assertArrayEquals(new int[] { 2 }, p.primes(3));
+        Assert.assertArrayEquals(new int[] { 2, 3 }, p.primes(4));
+        Assert.assertArrayEquals(new int[] { 2, 3 }, p.primes(5));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5 }, p.primes(6));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5 }, p.primes(7));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5, 7 }, p.primes(8));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5, 7 }, p.primes(9));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5, 7 }, p.primes(10));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5, 7 }, p.primes(11));
+        Assert.assertArrayEquals(new int[] { 2, 3, 5, 7, 11 }, p.primes(12));
+    }
+
 }
